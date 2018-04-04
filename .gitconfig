@@ -90,3 +90,6 @@
 
 [push]
 	default = matching
+[user]
+	name = Joe Bryan
+	email = joemfb@gmail.com
