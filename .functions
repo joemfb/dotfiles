@@ -266,6 +266,7 @@ function m() {
 # opens the given location
 function s() {
 	if [ $# -eq 0 ]; then
+		if [ -f ./*.sublime-project ]
 		subl .
 	else
 		subl "$@"
