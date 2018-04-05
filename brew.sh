@@ -39,7 +39,7 @@ brew install gnupg
 # Install more recent versions of some macOS tools.
 brew install vim --with-override-system-vi
 brew install grep --with-default-names
-brew install openssh
+# brew install openssh
 # brew install screen
 # brew install homebrew/php/php56 --with-gmp
 
