@@ -156,5 +156,7 @@
 	BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARm
 	ZmZmg0DAJT+DB17vPoM4Y8A8AYY=
 	</data>
+	<key>useOptionAsMetaKey</key>
+	<true/>
 </dict>
 </plist>
