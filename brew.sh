@@ -38,7 +38,7 @@ brew install gnupg
 
 # Install more recent versions of some macOS tools.
 brew install vim --with-override-system-vi
-brew install grep
+brew install grep --with-default-names
 brew install openssh
 # brew install screen
 # brew install homebrew/php/php56 --with-gmp
@@ -95,10 +95,12 @@ brew install tree
 
 # my additions
 brew install node
-brew install kakoune
 brew install mosh
 brew install tmux
 brew install urbit
+
+brew install ncurses
+brew install --HEAD https://raw.githubusercontent.com/mawww/kakoune/master/contrib/kakoune.rb
 
 # Remove outdated versions from the cellar.
 brew cleanup
