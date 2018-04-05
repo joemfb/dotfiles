@@ -3,6 +3,9 @@
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
 
+	# Where did I find this?
+	lg = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(yellow)%h%C(reset) - %C(bold green)(%ar)%C(reset) %s%C(reset) %C(white)- %an%C(reset)%C(bold blue)%d%C(reset)' --all
+
 	# View the current working tree status using the short format
 	s = status -s
 
@@ -82,7 +85,7 @@
 [apply]
 
 	# Detect whitespace errors when applying a patch
-	whitespace = fix
+	# whitespace = fix
 
 [core]
 
@@ -93,7 +96,7 @@
 	# Treat spaces before tabs and all kinds of trailing whitespace as an error
 	# [default] trailing-space: looks for spaces at the end of a line
 	# [default] space-before-tab: looks for spaces before tabs at the beginning of a line
-	whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+	# whitespace = space-before-tab,-indent-with-non-tab,trailing-space
 
 	# Make `git rebase` safer on macOS
 	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
@@ -135,7 +138,7 @@
 [commit]
 
 	# https://help.github.com/articles/signing-commits-using-gpg/
-	gpgsign = true
+	# gpgsign = true
 
 [diff]
 
@@ -160,9 +163,9 @@
 [push]
 
 	# https://git-scm.com/docs/git-config#git-config-pushdefault
-	default = simple
+	default = matching
 	# Make `git push` push relevant annotated tags when pushing branches out.
-	followTags = true
+	# followTags = true
 
 # URL shorthands
 
@@ -185,3 +188,7 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+
+[http]
+
+	postBuffer = 1048576000
